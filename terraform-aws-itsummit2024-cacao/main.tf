@@ -90,7 +90,5 @@ resource "aws_instance" "itsummit_instance" {
 
   tags = {
     Name = var.instance_name
-    AccountId = data.aws_caller_identity.current.account_id
-    UserId = data.aws_caller_identity.current.user_id
   }
 }
