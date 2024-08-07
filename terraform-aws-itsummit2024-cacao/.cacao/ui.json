@@ -1,0 +1,21 @@
+{
+    "schema_url": "https://gitlab.com/cyverse/cacao-common/-/raw/master/template/ui-schemas/v1/schema.json",
+    "schema_version": "1",
+    "author": "John Xu",
+    "author_email": "",
+    "steps": [
+        {
+            "title": "Parameters",
+            "items": [
+                {
+                    "name": "region",
+                    "ui_label": "Choose Region"
+                },
+                {
+                    "name": "instance_name",
+                    "ui_label": "Instance name"
+                }
+            ]
+        }
+    ]
+}

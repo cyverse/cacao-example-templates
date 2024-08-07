@@ -1,0 +1,31 @@
+{
+  "schema_url": "https://gitlab.com/cyverse/cacao-common/-/raw/master/template/metadata-schemas/v3/schema.json",
+  "schema_version": "3",
+  "name": "simple instance launch",
+  "author": "Edwin Skidmore",
+  "author_email": "edwin@cyverse.org",
+  "description": "simple launch of one or more vms",
+  "template_type": "aws_terraform",
+  "purpose": "aws_compute",
+  "cacao_pre_tasks": [],
+  "cacao_post_tasks": [],
+  "parameters": [
+    {
+      "name": "region",
+      "type": "cacao_provider_region",
+      "default": "us-west-2",
+      "description": "AWS Region"
+    },
+    {
+      "name": "instance_name",
+      "type": "string",
+      "default": "terraform-aws-itsummit2024",
+      "description": "Instance name"
+    },
+    {
+      "name": "user_data",
+      "type": "cacao_cloud_init",
+      "description": "cloud init script"
+    }
+  ]
+}
